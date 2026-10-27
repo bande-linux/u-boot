@@ -3,9 +3,9 @@
 U-Boot for Apple Silicon Macs
 =============================
 
-Allows Apple Silicon Macs to boot U-Boot via the m1n1 bootloader
-developed by the Asahi Linux project.  At this point the machines with
-the following SoCs work:
+Allows Apple Silicon Macs to boot U-Boot via the unboot bootloader,
+derived from m1n1 developed by the Asahi Linux project.  At this point
+the machines with the following SoCs work:
 
  - Apple M1 SoC (t8103)
  - Apple M2 SoC (t8112)
@@ -44,26 +44,26 @@ Image creation
 --------------
 
 In order to run U-Boot on an Apple Silicon Mac, U-Boot has to be used
-as a payload for the m1n1 bootloader.  Instructions for building m1n1
+as a payload for the unboot bootloader.  Instructions for building unboot
 can be found here:
 
-    https://github.com/AsahiLinux/docs/wiki/SW%3Am1n1
+    https://github.com/unbound-linux/bootloader
 
 .. code-block:: bash
 
-    $ cat m1n1.macho t8103-j274.dtb u-boot-nodtb.bin > u-boot.macho
+    $ cat unboot.macho t8103-j274.dtb u-boot-nodtb.bin > u-boot.macho
 
 This uses ``u-boot-nodtb.bin`` as the device tree is passed to U-Boot
-by m1n1 after making some adjustments.
+by unboot after making some adjustments.
 
 Image installation
 ------------------
 
 Instructions on how to install U-Boot on your Mac can be found at:
 
-    https://github.com/AsahiLinux/docs/wiki/Developer-Quickstart
+    https://github.com/unbound-linux/bootloader
 
-Just replace ``m1n1.macho`` with ``u-boot.macho`` in the instructions.
+Just replace ``unboot.macho`` with ``u-boot.macho`` in the instructions.
 
 Debug UART
 ----------
