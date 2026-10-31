@@ -47,7 +47,7 @@ In order to run U-Boot on an Apple Silicon Mac, U-Boot has to be used
 as a payload for the unboot bootloader.  Instructions for building unboot
 can be found here:
 
-    https://github.com/unbound-linux/bootloader
+    https://github.com/bande-linux/bootloader
 
 .. code-block:: bash
 
@@ -61,7 +61,7 @@ Image installation
 
 Instructions on how to install U-Boot on your Mac can be found at:
 
-    https://github.com/unbound-linux/bootloader
+    https://github.com/bande-linux/bootloader
 
 Just replace ``unboot.macho`` with ``u-boot.macho`` in the instructions.
 
