@@ -1,8 +1,6 @@
 name: apple
 
 on:
-  push:
-    branches: [ main, 'prep/**' ]
   workflow_dispatch:
 
 jobs:
